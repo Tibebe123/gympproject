@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/profileinfo.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Admin</title>
+</head>
+<body id="bodyadmin">
+    <div class="nav-container" id="nav-container1">
+        <div class="logo" id="logo1">
+          <h2>NAD<span>Fitness</span></h2>
+        </div>
+  
+        <div class="topnav" id="myTopnav">
+          <a href="/logout" class="login">Logout</a>
+          <a href="/profile" id="signup">Admin</a>
+          <a href="#" class="icon">
+            <i class="fa fa-bars" style="color: white"></i>
+          </a>
+        </div>
+    </div>
+    <div class="tableadmin">
+    <table class="table2">
+        <tr class="tr">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Amount</th>
+            <th>Bank</th>
+            <th>Receipt</th>
+        </tr>
+        {% for profile in profiles %}
+        <tr>
+            <td>{{ profile.name }}</td>
+            <td>{{ profile.email }}</td>
+            <td>{{ profile.age }}</td>
+            <td>{{ profile.height }}</td>
+            <td>{{ profile.weight }}</td>
+            <td>{{ profile.startdate }}</td>
+            <td>{{ profile.enddate }}</td>
+            <td>{{ profile.amount }}</td>
+            <td>{{ profile.account }}</td>
+            <td>{{ profile.receipt }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+</body>
+</html>

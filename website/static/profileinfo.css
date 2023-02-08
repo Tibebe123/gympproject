@@ -1,0 +1,220 @@
+input[type="text"],
+select,
+input[type="date"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 10px 0;
+}
+
+.nav-container {
+  background: var(--the-color);
+  z-index: 1;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #87431D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.h1{
+  padding-top: 10px;
+  width: 400px;
+}
+.qrcode{
+  width: 150px;
+  height: 150px;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #C87941;
+}
+.table{
+  padding-left: 30px;
+}
+.container {
+  opacity: 0.8;
+  border-radius: 5px;
+  background-color: #302e2e;
+  padding: 70px 20px 300px 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.container::before{
+  opacity: 0.7;
+  background-color: inherit;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row {
+  margin: 10px 400px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.ad-board {
+  width: 300px;
+  height: 1500px;
+  background-color: rgb(168, 122, 104);
+  float: right;
+  margin-right: 0px;}
+
+.packages{
+  margin-top: 80px;
+  width: 900px;
+}
+.cards {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px;
+  width: calc(280px * 3);
+}
+
+.card {
+  box-shadow: 0 3px 10px 0 #aaa;
+  background-color: #87431D;
+  cursor: pointer;
+  height: 280px;
+  width: 243px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card:hover {
+  background: rgb(29, 28, 28);
+}
+
+.card:visited {
+  background: rgb(29, 28, 28);
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card.visited {
+  box-shadow: 0 3px 10px 2px #444;
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    width: calc(280px * 2);
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    display: block;
+    width: 100vw;
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+}
+
+.space {
+  margin-top: 200px;
+}
+#nav-container1{
+  justify-content: space-between;
+}
+#logo1{
+  padding-left: 30px;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.update-button {
+  margin-right: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tableadmin{
+  padding-top: 70px;
+}
+#bodyadmin{
+  background-image: none;
+}
+.table2 {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table2 td, th {
+  
+  text-align: left;
+  padding: 8px;
+}
+
+.table2 th {
+  background-color: #771313;;
+}
+
+.table2 tr:nth-child(even) {
+  background-color: #916262;
+}

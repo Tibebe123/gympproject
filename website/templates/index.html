@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="./static/style.css" />
+    <script src="static/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo">
+        <h2>NAD<span>Fitness</span></h2>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#service">Services</a>
+        <a href="#price">Pricing</a>
+        <a href="/login" class="login">Login</a>
+        <a href="/signup" id="signup">SignUp</a>
+        <a href="#" class="icon">
+          <i class="fa fa-bars" style="color: white"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-section" id="home">
+      <div class="text-section">
+        <h1>Get Fit Strong And Motivated</h1>
+        <p>
+          Our web application provides a convenient solution for fitness enthusiasts who want to have access to multiple gym locations. With our single account, you can easily switch between gym locations and never miss a workout.
+        </p>
+        <button href="/signup" class="getStartedBtn">Sign Up</button>
+       
+        
+      </div>
+      <!-- <div class="img">
+        <img src="./static/workout.jpg" alt="" />
+      </div> -->
+    </div>
+
+    <!-- contact -->
+
+    <div class="contact-container" id="contact">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">WARSAW</div>
+            <div class="text-two">POLAND</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+0098 9893 5647</div>
+            <div class="text-two">+0096 3434 5678</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">tibebe@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you want to contact us you can send us a message here</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <input type="textarea" placeholder="Message" />
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- service section -->
+    <div class="service" id="service">
+      <div class="service-head">
+        <h2>Our Service</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3>Experience</h3>
+          <p>
+            Remarkable customer service, a safe, clean, comfortable environment
+            and the best training floor around await you at your local World
+            Gym.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Full Equipment</h3>
+          <p>
+            for your satisfaction we include all types of gym equipment like
+            dumbbell, barbell, treadmills, rowing machines, and many others
+          </p>
+        </div>
+        <div class="card">
+          <h3>Personal training</h3>
+          <p>
+            We have enough hall to include yoga classes, spinning, body pump and
+            many others.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- price section  -->
+
+    <div class="price-container" id="price">
+      <div class="service-head">
+        <h2>We offer our services with affordable prices</h2>
+      </div>
+      <div class="row1">
+        <div class="card">
+          <div>
+            <h1>Full package</h1>
+            <p>Aerobics</p>
+            <p>Gymnasium</p>
+            <p>Taekwondu</p>
+            <p>Yoga</p>
+            <h2>3000 Birr</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <h1>Basic</h1>
+            <p>Aerobics</p>
+            <p>Gymnasium</p>
+            <h2>2000 Birr</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="card">
+          <div>
+            <h1>Student</h1>
+            <p>Aerobics</p>
+            <p>Gymnasium</p>
+            <h2>1500 Birr</h2>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>2023 All rights reserved.☺</p>
+    </footer>
+  </body>
+</html>

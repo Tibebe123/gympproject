@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Update</title>
+    <link rel="stylesheet" href="/static/profile.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/script.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="nav-container" id="nav-container1">
+      <div class="logo" id="logo1">
+        <h2>NAD<span>Fitness</span></h2>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="/logout" class="login">Logout</a>
+        <a href="/profile" id="signup">Profile</a>
+        <a href="#" class="icon">
+          <i class="fa fa-bars" style="color: white"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="service-head">
+        <h2>Profile</h2>
+      </div>
+
+
+
+      <form method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="age">Age</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="age" name="age" placeholder="Your age.." />
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="Height">Height</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="height"
+              name="height"
+              placeholder="Your height.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="weight">Weight</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="weight"
+              name="weight"
+              placeholder="Your weight.."
+            />
+          </div>
+        </div>
+     
+        <div class="packages">
+            <div class="cards">
+              <div class="card" data-amount="3000">
+                <div class="card-body">
+                  <h1 class="card-title">Full Packages</h1>
+                  <p>Aerobics</p>
+                  <p>Gymnasium</p>
+                  <p>Taekwondu</p>
+                  <p>Yoga</p>
+                  <h2>3000 Birr</h2>
+                </div>
+              </div>
+  
+              <div class="card" data-amount="2000">
+                <div class="card-body">
+                  <h1 class="card-title">Basic</h1>
+                  <p>Aerobics</p>
+                  <p>Gymnasium</p>
+                  <h2>2000 Birr</h2>
+                </div>
+              </div>
+  
+              <div class="card" data-amount="1500">
+                <div class="card-body">
+                  <h1 class="card-title">Student</h1>
+                  <p>Aerobics</p>
+                  <p>Gymnasium</p>
+                  <h2>1500 Birr</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-25">
+              <label for="name">Start date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="startdate" name="startdate" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="name">End date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="enddate" name="enddate" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="amount">Amount</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="amount"
+                name="amount"
+                placeholder="Amount"
+              />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Bank Name</label>
+            </div>
+            <div class="col-75">
+              <select id="bank" name="bank">
+                <option value="CBE">CBE ACC No:#### #### #### ####</option>
+                <option value="DASHEN">DASHEN ACC No:#### #### #### ####</option>
+                <option value="ABYSSINIA">ABYSSINIA ACC No:#### #### #### ####</option>
+                <option value="AWASH">AWASH ACC No:#### #### #### ####</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-25">
+              <label for="weight">Upload receipt image</label>
+            </div>
+            <div class="col-75">
+              <input type="file" id="receipt" name="receipt" />
+            </div>
+          </div>
+
+        <div class="row">
+          <input type="submit"/>
+        </div>
+      </form>
+
+
+
+
+      <div class="space"></div>
+    </div>
+
+    
+    
+  
+
+    
+
+  </body>
+  
+</html>

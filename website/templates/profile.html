@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="static/profileinfo.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="static/script.js" defer></script>
+    
+  </head>
+  <body>
+  
+    <div class="nav-container" id="nav-container1">
+      <div class="logo" id="logo1">
+        <h2>NAD<span>Fitness</span></h2>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="/logout" class="login">Logout</a>
+        <a href="/profile" id="signup">Profile</a>
+        <a href="#" class="icon">
+          <i class="fa fa-bars" style="color: white"></i>
+        </a>
+      </div>
+    </div>
+    
+
+
+    <div class="container" >
+    
+    <h1 class="h1">Profile Information</h1>
+
+    <div class="ad-board">
+      <h1 style="text-align:center;">Avaliable for Advertisment.
+      </h1>
+    </div>
+    <div style="display: flex; align-items: center; padding-top:30px; width:800px;" >
+    <img class ="qrcode" src="{{ qr_code_data_url }}">
+    <table class="table">
+      <tr>
+        <td>Email:</td>
+        <td>{{ profile.email }}</td>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td>{{ profile.name }}</td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td>{{ profile.age }}</td>
+      </tr>
+      <tr>
+        <td>Height:</td>
+        <td>{{ profile.height }}</td>
+      </tr>
+      <tr>
+        <td>Weight:</td>
+        <td>{{ profile.weight }}</td>
+      </tr>
+      <tr>
+        <td>Start date:</td>
+        <td>{{ profile.enddate}}</td>
+      </tr>
+      <tr>
+        <td>End date:</td>
+        <td>{{ profile.enddate }}</td>
+      </tr>
+      <tr>
+        <td>Receipt</td><br>
+        <td>{{ profile.receipt }}</td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="buttons">
+    <a href="{{ url_for('views.update_profile', profile_id=profile.id) }}">
+      <button class="update-button">Update</button>
+    </a>
+    <form action="{{ url_for('views.delete_profile', profile_id=profile.id, user_id=user.id) }}" method="post">
+      <button class="delete-button" type="submit">Delete</button>
+    </form>
+    </div>
+
+    
+  
+    <div class="packages">
+      <h2 style="margin-left: 260px;">Available gyms with profile</h2>
+      <div class="cards">
+        <div class="card" style="background-image: url(static/ayat.jpg); " data-amount="3000">
+          <div class="card-body">
+            <h1 class="card-title">Ayat Gym</h1><br>
+            <p>A boutique gym that offers a range of classes, including cycling and TRX, in a serene and personalized setting.</p>
+            <br>Located at 444 Birch Ave, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="2000">
+          <div class="card-body">
+            <h1 class="card-title">Sheger Gym</h1><br>
+            <p>Specializes in weight training and bodybuilding, 
+              with top-of-the-line equipment and knowledgeable personal trainers.</p><br>Located at 456 Elm Ave, Addis Ababa, Ethiopia.
+            
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Kirkos Gym</h1><br>
+            <p>A high-end gym that offers a range of luxurious amenities, including a hot tub, a lounge, and a private training studio.</p>
+            <br>Located at 666 Elm Rd, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Bole Gym</h1><br>
+            <p>A luxury gym that offers exclusive amenities, such as a rooftop pool and a smoothie bar.</p>
+            <br>Located at 111 Pine St, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Merkato Gym</h1><br>
+            <p>Offers a wide variety of classes, including dance and martial arts, as well as a co-ed sauna and steam room.</p>
+            <br>Located at 222 Cedar Rd, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Arada Gym</h1><br>
+            <p>Provides a range of services, including a full-service spa, a juice bar, and a sun deck.</p>
+            <br>Located at 333 Maple Ln, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            
+            <h1 class="card-title">Addis Ababa Fitness Center</h1><br>
+            <p>Offers a wide range of fitness classes, including yoga, 
+              Pilates, and cardio. .</p><br>Located at 123 Main St, Addis Ababa, Ethiopia.
+            
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Akaki Gym</h1><br>
+            <p>A spacious gym that offers state-of-the-art equipment, group fitness classes, and personal training.</p>
+            <br> Located at 555 Oak St, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            
+            <h1 class="card-title">Yirgacheffe Gym</h1><br>
+            <p>A family-friendly gym that offers a variety of fitness classes.</p><br>Located at 789 Oak Blvd, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+
+        <div class="card" data-amount="1500">
+          <div class="card-body">
+            <h1 class="card-title">Nefas Silk Gym</h1><br>
+            <p>A premium gym that offers a variety of specialized classes, including Pilates and barre.</p>
+            <br>Located at 777 Pine Ave, Addis Ababa, Ethiopia.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+  </body>
+  
+</html>
